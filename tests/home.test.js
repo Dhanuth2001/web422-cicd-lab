@@ -2,13 +2,13 @@ import Home from "@/pages/index";
 import { render } from "@testing-library/react";
 
 describe("Home Page", () => {
-  test("renders the 'Vehicles UI' heading", () => {
+  test("renders the 'My Vehicles Dashboard' heading", () => {
     const { container } = render(<Home />);
 
     const heading = container.querySelector("h1");
 
     expect(heading).toBeTruthy();
-    expect(heading.textContent).toBe("Vehicles UI");
+    expect(heading.textContent).toBe("My Vehicles Dashboard");
   });
 
   test("renders a link to the /vehicles page", () => {
