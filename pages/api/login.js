@@ -12,7 +12,7 @@ export default function handler(req, res) {
 
   const { userName, password } = req.body;
 
-  if (userName === "bob" && password === "myPassword") {
+  if (userName === "bob" && password === "pass") {
     // A fake, non-verifiable token; enough to demonstrate the flow.
     return res.status(200).json({ message: "login successful", token: "demo-token" });
   }
